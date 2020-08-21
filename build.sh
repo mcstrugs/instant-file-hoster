@@ -8,6 +8,5 @@ fi
 
 rm -r output
 cp -r ./template ./output
-cp -r $1 ./output/files/.
 
-python3 setport.py
+python3 setport.py $1
