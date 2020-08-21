@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-import sys
-
 import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('', 0))
@@ -18,3 +16,7 @@ data = data.replace('XXXX',str(addr))
 w = open("./output/docker-compose.yml","wt")
 w.write(data)
 w.close()
+
+print("URL SET TO: http://localhost:" + str(addr))
+
+
