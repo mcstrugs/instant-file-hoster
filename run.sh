@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
-cd output
+cd output || exit
 docker-compose up
